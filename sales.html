@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<!-- this is a comment -->
+
+<head>
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <meta name="author" content="JP Park">
+    <meta name="keywords" content="Burnt Almond Torte">
+    <meta name="description" content="Prantl's Bakery Website">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel='stylesheet' id='google-webfont-css' href='//fonts.googleapis.com/css?family=Lato%3A300%2C700%2C300italic%2C700italic%7CJosefin+Slab%3A400%2C700%2C400italic%2C700italic&#038;ver=all' type='text/css' media='all' />
+    <!--Below is pie version of highchart-->
+    <script type="text/javascript">
+        $(function() {
+            $('#sales').highcharts({
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false,
+                    type: 'pie'
+                },
+                title: {
+                    text: 'Popular Items for All Locations'
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: true,
+                            format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                            style: {
+                                color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                            }
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Percentage of Sale',
+                    colorByPoint: true,
+                    data: [{
+                        name: 'Almond Torte',
+                        y: 56.33,
+                        sliced: true
+                        //Sliced shows that Almond Torte is the bestseller
+                    }, {
+                        name: 'Butter Cookie',
+                        y: 24.03
+                    }, {
+                        name: 'Carrot Cake',
+                        y: 19.64
+                    }]
+                }]
+
+            });
+        });
+    </script>
+
+
+    <title>Prantl's Bakery</title>
+</head>
+
+<body>
+
+    <div id="top_row">
+        <div id="buttons">
+            <ul>
+                <li>
+                    <a href="https://www.yelp.com/biz/prantls-bakery-pittsburgh" target="_blank"><img src="images/yelp.png"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/prantlsbakery?lang=en" target="_blank"><img src="images/twitter.png"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/prantlsbakery/?hl=en" target="_blank"><img src="images/instagram.png"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/PrantlsBakery/" target="_blank"><img src="images/facebook.png"></a>
+                </li>
+            </ul>
+        </div>
+        <header>
+            <img class="prantl" src="images/prantl.png">
+        </header>
+        <br>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="story.html">OUR STORY</a>
+            <div class="dropdown">
+                <a>CATERING</a>
+                <div class="dropdown-content">
+                    <a href="weddings.html">WEDDING</a>
+                    <a href="celebrations.html">CELEBRATION</a>
+                </div>
+            </div>
+            <a href="location.html">LOCATIONS</a>
+            <a href="contact.html">CONTACT US</a>
+            <a href="sales.html" class="selected">SALES</a>
+        </nav>
+    </div>
+
+    <div id="content2">
+        <h1>Sales</h1><br>
+
+        <div id="sales" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+        <br>
+        <footer>
+            <hr/> &copy; Prantl's Bakery 2017
+            <br/>
+            <a href="malito:info@prantlsbakery.com">Email Us</a>
+            <a href="http://www.prantlsbakery.com/" target="_blank">Official Website</a>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

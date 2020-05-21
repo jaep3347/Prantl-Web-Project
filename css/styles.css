@@ -1,0 +1,329 @@
+.prantl {
+    margin-left: 41.9%;
+    margin-right: auto;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.7em;
+    color: #000000;
+}
+
+#container {
+    width: 80%;
+    margin: 10px auto;
+}
+
+#top_row {
+  /* Menu Bar Styling */
+    border-bottom: 1px dotted #cccccc;
+    padding: .5em .5em 1em .5em;
+}
+
+#top_row nav {
+    padding: auto;
+    text-align: center;
+}
+
+#top_row nav a {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 15px;
+    color: #000000;
+}
+
+#top_row nav a.selected {
+  /* Accounts for the color of menu when selected */
+    color: #bbbbbb;
+}
+
+#top_row nav a:hover {
+  /* Hovering color change */
+    color: #B05D31;
+}
+
+.dropdown {
+  /* Dropdown Menubar styling */
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    margin-top: 11.4px;
+    margin-right: auto;
+    display: none;
+    position: absolute;
+    background-color: white;
+    background: rgba(255, 255, 255, 0.5);
+    min-width: relative;
+    /*    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+#content {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+#content h3 {
+    font-family: Georgia, serif;
+    font-size: 1.5em;
+    margin: 30px 0 10px 0;
+    font-weight: normal;
+}
+
+#sidebar {
+    float: left;
+    padding: 1em;
+    font-size: .875em;
+}
+
+footer {
+    clear: both;
+    margin: 0;
+    padding: .5em;
+    color: #333333;
+    font-variant: small-caps;
+    font-size: .813em;
+    text-align: center;
+}
+
+#content img {
+    float: left;
+    margin: 1em;
+}
+
+#accordion {
+  /* Catering Page */
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tabs {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 10px
+}
+
+legend {
+    font-weight: bold;
+    text-align: center;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+label {
+    font-weight: bold;
+    text-align: center;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+.torte {
+  /* Main Page Big Torte Picture */
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    height: auto;
+    left: 50%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 4px;
+}
+
+/* Index Page Featured Articles */
+#praises {
+    display: table;
+    margin: auto;
+}
+
+#praises a {
+    display: table-cell;
+    text-align: center;
+}
+
+#praises img {
+    max-width: 240px;
+    margin-left: 27px;
+    margin-right: 27px;
+}
+
+h2 {
+    font-style: italic;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 400;
+    text-align: center;
+}
+
+body {
+    background-color: #FDF9E1;
+}
+
+#storyofus {
+    float: right;
+    width: 50%;
+    margin: 0;
+    padding: 1em;
+    border-left: 1px dotted #ccc;
+}
+
+#sidepic {
+  /* Left Size */
+    float: left;
+    margin: auto;
+    width: 45%;
+    padding: 10px;
+    padding-top: 50px;
+}
+
+#content2 {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#locations {
+    float: right;
+    margin: auto;
+    padding: 10px;
+    padding-left: 80px;
+    border-left: 1px dotted #ccc;
+}
+
+#locations2 {
+    float: left;
+    margin: auto;
+    padding: 10px;
+}
+
+table {
+    width: 85%;
+    border: 3px solid #8B0000;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border-spacing: 3px
+}
+
+th {
+    height: 40px;
+    font-weight: bold;
+    padding: 2px;
+    text-align: center;
+    border: 1px solid #8B0000;
+    /* instructions said #333333 but this looks better */
+}
+
+td {
+    padding: 2px;
+    text-align: center;
+    border: 1px solid #8B0000;
+}
+
+#content2 li {
+    float: none;
+}
+
+#content2 ol {
+    text-align: center;
+    list-style-position: inside;
+    font-style: italic;
+}
+
+#weddingright {
+    float: right;
+    width: 55%;
+    margin: 0;
+    padding: 1em;
+    border-left: 1px dotted #ccc;
+}
+
+#weddingleft {
+    float: left;
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+#weddingleft img {
+    max-width: 90%;
+}
+
+#wedding {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+#wedding img {
+    float: left;
+    margin: 1em;
+}
+
+#wedding h1 {
+    text-align: center;
+}
+
+#wedding h2 {
+    font-weight: 500;
+}
+
+#wedding h3 {
+    text-align: left;
+    font-weight: bold;
+}
+
+figcaption {
+    text-align: center;
+}
